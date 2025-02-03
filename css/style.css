@@ -1,0 +1,165 @@
+:root {
+  --fuentePrincipal: "Roboto", serif;
+  --fondoPrincipal: #fffafa;
+  --colorCeleste: #87ceeb;
+  --colorAzul: #4682b4;
+  --colorSecundario: #274472;
+  --fondoSecundario: #e8dcc2;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: 16px;
+  line-height: 1.5;
+  font-family: var(--fuentePrincipal);
+  background-color: var(--fondoPrincipal);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  letter-spacing: 0.5rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.header h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+}
+
+.header h2 span {
+  color: var(--colorCeleste);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.navBar {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navBar {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.navBar a {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navBar a:hover {
+  color: var(--colorCeleste);
+}
+
+.section-principal {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: -4px 10px 6px 0px rgba(0, 0, 0, 0.64);
+}
+
+.section-principal__img {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-principal__img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-producto p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenido-producto button {
+  padding: 2rem;
+  background-color: var(--colorAzul);
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  font-size: 2.4rem;
+  border: none;
+}
+
+.contenido-producto button:hover {
+  cursor: pointer;
+  background-color: var(--colorSecundario);
+}
+
+.footer p {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.img-producto img {
+  width: 25rem;
+  height: auto;
+}
