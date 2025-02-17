@@ -1,0 +1,16 @@
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 500px;
+    height: 400px;
+    align-items: center;
+  }
+}

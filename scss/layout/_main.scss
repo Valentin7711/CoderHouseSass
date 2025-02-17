@@ -1,0 +1,53 @@
+.section-principal {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: -4px 10px 6px 0px rgba(0, 0, 0, 0.64);
+  .section-principal__img {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  &:hover {
+    transform: scale(1.25) rotate(2deg);
+    cursor: pointer;
+  }
+  .img-producto {
+    width: 144px;
+    height: auto;
+  }
+}
+
+.contenido-producto {
+  p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  button {
+    padding: 2rem;
+    background-color: $colorAzul;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $colorSecundario;
+    }
+  }
+}

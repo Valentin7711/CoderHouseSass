@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: 16px;
+  line-height: 1.5;
+  font-family: $fuentePrincipal;
+  background-color: $fondoPrincipal;
+  img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  letter-spacing: 0.5rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
