@@ -1,14 +1,10 @@
 {
-  "name": "actividad-2-bauducco",
+  "name": "actividad-3-bauducco-coder---copia",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Valentin7711/SegundaEntregaCoder#readme",
-  "bugs": {
-    "url": "https://github.com/Valentin7711/SegundaEntregaCoder/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Valentin7711/SegundaEntregaCoder.git"
+    "url": "bash: gir: command not found"
   },
   "license": "ISC",
   "author": "",
