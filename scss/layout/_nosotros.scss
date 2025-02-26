@@ -1,9 +1,47 @@
+.nosotros-h1 {
+  transform: translateX(-50px) scale(0.8);
+  animation: fadeInScale 1s ease-out forwards;
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: translateX(-50px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+}
+
+.nosotros-parrafo {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  background-color: beige;
+  font-weight: bold;
+  @include tablet {
+    background-color: $fondoSecundario;
+  }
+}
+
+.nosotros-img {
+  height: 700px;
+  width: 100%;
+  object-fit: contain;
+  padding: 30px;
+}
+
 .nosotros {
   display: flex;
   justify-content: center;
   p {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
     font-size: 15px;
+    font-weight: bold;
+    background-color: beige;
+    @include tablet {
+      background-color: $fondoSecundario;
+    }
   }
 }

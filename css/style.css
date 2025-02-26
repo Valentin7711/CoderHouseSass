@@ -467,6 +467,21 @@ h2 span {
   background-color: #274472;
 }
 
+.clientes {
+  transform: translateX(-50px) scale(0.8);
+  animation: fadeInScale 1s ease-out forwards;
+}
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
 .logos {
   display: flex;
   flex-direction: column;
@@ -476,6 +491,7 @@ h2 span {
   .logos {
     flex-direction: row;
     justify-content: space-between;
+    object-fit: contain;
   }
 }
 .logos img {
@@ -484,14 +500,56 @@ h2 span {
   align-items: center;
 }
 
+.nosotros-h1 {
+  transform: translateX(-50px) scale(0.8);
+  animation: fadeInScale 1s ease-out forwards;
+}
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.nosotros-parrafo {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  background-color: beige;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .nosotros-parrafo {
+    background-color: #e8dcc2;
+  }
+}
+
+.nosotros-img {
+  height: 700px;
+  width: 100%;
+  object-fit: contain;
+  padding: 30px;
+}
+
 .nosotros {
   display: flex;
   justify-content: center;
 }
 .nosotros p {
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   font-size: 15px;
+  font-weight: bold;
+  background-color: beige;
+}
+@media (min-width: 768px) {
+  .nosotros p {
+    background-color: #e8dcc2;
+  }
 }
 
 .formulario {
@@ -530,6 +588,13 @@ input {
   color: black;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  input {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 
 ::placeholder {
   color: black;
@@ -555,6 +620,11 @@ input {
   padding: 30px;
   text-align: center;
   background-color: darkgrey;
+}
+@media (min-width: 768px) {
+  .precio-producto p {
+    flex-direction: row;
+  }
 }
 
 .footer p {
