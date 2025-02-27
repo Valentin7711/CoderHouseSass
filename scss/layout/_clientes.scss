@@ -1,4 +1,9 @@
+.navBar a {
+  text-decoration: none;
+}
+
 .clientes {
+  padding: 25px;
   transform: translateX(-50px) scale(0.8);
   animation: fadeInScale 1s ease-out forwards;
   @keyframes fadeInScale {
@@ -15,18 +20,29 @@
 
 .logos {
   display: flex;
+  font-weight: bolder;
+  gap: 50px;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
   @include tablet {
+    align-items: center;
+    text-align: center;
     flex-direction: row;
-    justify-content: space-between;
-    object-fit: contain;
   }
 
   img {
-    width: 500px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     align-items: center;
+    object-fit: contain;
+  }
+}
+
+.card-body {
+  .card-text {
+    font-size: 15px;
   }
 }
